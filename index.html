@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicita tu Crédito - Banco del Pueblo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #004481;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #004481;
+    }
+    .creditos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .card {
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: scale(1.02);
+      border-color: #004481;
+    }
+    form {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, select, button {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #004481;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0060c1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Créditos Digitales - Banco del Pueblo</h1>
+    <p>Solicita tu crédito de forma rápida, segura y 100% en línea</p>
+  </header>
+
+  <main class="container">
+    <h2>Elige el tipo de crédito</h2>
+    <div class="creditos">
+      <div class="card">Crédito de Nómina</div>
+      <div class="card">Crédito Personal</div>
+      <div class="card">Tarjeta de Crédito</div>
+      <div class="card">Crédito Hipotecario</div>
+      <div class="card">Crédito para Compra de Acciones</div>
+    </div>
+
+    <form>
+      <h2>Solicita tu Crédito</h2>
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <input type="tel" placeholder="Teléfono de contacto" required>
+      <select required>
+        <option value="">Selecciona tipo de crédito</option>
+        <option value="nomina">Crédito de Nómina</option>
+        <option value="personal">Crédito Personal</option>
+        <option value="tarjeta">Tarjeta de Crédito</option>
+        <option value="hipotecario">Crédito Hipotecario</option>
+        <option value="acciones">Compra de Acciones</option>
+      </select>
+      <button type="submit">Enviar Solicitud</button>
+    </form>
+  </main>
+</body>
+</html>
